@@ -1,0 +1,39 @@
+<input type="button" onclick="share_prompt('http://www.creativetabs.com')" value="Share" />
+
+<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript" charset="utf-8"></script>
+<div id="fb-root"></div>    
+<script type="text/javascript" charset="utf-8">
+FB.init({
+    appId: 'APP ID', 
+    status: true, 
+    cookie: true,
+    xfbml: true
+});
+
+function share_prompt(link)
+{
+
+ var video_link = link;
+FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+      object: video_link,
+  })
+}, function(response){
+
+if (response && !response.error_code) {
+	//Action When it share it
+        alert('Posting completed.');
+      } else {
+	//Action When it not share it
+        alert('Error while posting.');
+      }
+
+});
+
+
+
+ }
+
+</script>

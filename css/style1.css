@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/***reset***/
+h1,h2,h3,h4,h5,h6,p {margin:0; padding:0;}
+ul {margin:0; padding:0;}
+ul li {list-style-type:none;}
+img {border:0 none;}
+a {text-decoration:none;}
+span {display:block;}
+
+/***common***/
+body {margin:0; padding:0;font-family: 'Open Sans', 'Source Sans Pro',sans-serif;}
+
+/***header***/
+#header { background-color:#367fa9; padding:7px 0;}
+#sign-in {padding-top:40px;}
+#sign-in .info { padding-bottom:50px; }
+
+#sign-in .info p { color:#333;font-family: 'Droid Sans', sans-serif;font-size:11px;text-transform:capitalize; min-height:125px;margin-bottom:10px;}
+#sign-in .info p b {font-size:15px; font-weight:600;}
+#sign-in .info p span {margin-top:8px;}
+#sign-in .info a {color:#000; text-decoration:none; background:url('../images/arrow.png') no-repeat center right; padding:0 15px 0 0;text-transform:capitalize;font-family:'open sans';font-size:12px; font-weight:600;}
+
+#sign-in .usr-detail {border:1px solid #539bc6; margin-bottom:40px;}
+#sign-in .usr-detail .sign {padding:10px 0; background-color:#539bc6; color:#fff; font-size:24px; font-family:'source sans pro'; text-align:center;margin-bottom:30px; text-transform:capitalize;}
+#sign-in .usr-detail .form-group1 {width:250px; margin:0 17px 15px 17px;}
+#sign-in .usr-detail .form-group1 input#userName, input#userPassword { border-radius:0px; box-shadow:none; font-family:'source sans pro';background-color:#f9f9f9;font-size:12px; color:#666;}
+#sign-in .usr-detail .form-group1 input#usrsubmit {background-color:#539bc6; color:#fff; font-size:15px; font-family:'source sans pro'; padding:7px 60px;  margin:10px 43px 0 43px; text-decoration:none; text-transform:capitalize;border:none;}
+#sign-in .usr-detail .f-pswd {text-align:center; margin:5px 0 25px 0;}
+#sign-in .usr-detail .f-pswd a { color:#000;text-decoration:none;font-family:'open sans';font-size:12px; font-weight:500;}
+#sign-in .usr-detail .social-media {margin:12px 80px 35px 80px;} 
+#sign-in .usr-detail .social-media a.f-btn {background-color:#3b5998; color:#fff; padding:4px 6px; border-radius:3px; margin-right:5px;text-decoration:none;font-family:'open sans';font-size:12px;}
+#sign-in .usr-detail .social-media a.g-btn {background-color:#c32f10; color:#fff; padding:4px 6px; border-radius:3px;text-decoration:none;font-family:'open sans';font-size:12px; }
+#sign-in .usr-detail .register {padding:10px 0; background-color:#539bc6; text-align:center;}
+#sign-in .usr-detail .register a {color:#fff; font-size:12px;font-family:'open sans'; text-transform:capitalize; text-decoration:none;}
+
+/***--------------------------responsive-----------------------------------***/
+@media only screen and (min-width : 320px) 
+{
+  #sign-in .info {padding:0;}
+  #sign-in .usr-detail .form-group1 a.btn1 {margin:auto 0;}
+  #sign-in .usr-detail .form-group1 {width:auto;}      
+}
+
+@media only screen and (min-width : 480px) 
+{
+	#sign-in .usr-detail .form-group1 a.btn1 {margin:auto 0;}
+	#sign-in .usr-detail .form-group1 {width:auto;}
+	#sign-in .info {padding:0;}
+}
+@media(min-width:768px)
+{
+	#sign-in .usr-detail .form-group1 {width:auto;}
+	#sign-in .usr-detail .form-group1 input#usrsubmit {margin:0;}
+	#sign-in .usr-detail .social-media {margin:12px 0 35px 0;}
+}
+@media(min-width:992px){}
+@media(min-width:1200px){}
